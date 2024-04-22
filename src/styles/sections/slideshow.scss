@@ -2,6 +2,7 @@
 
 .slideshow {
   padding-top: 24px;
+  min-height: 120px;
 
   &__slide {
     position: relative;
@@ -42,6 +43,7 @@
 
 @include mixins.breakpoint(desktop) {
   .slideshow {
+    min-height: 480px;
     padding-top: 16px;
 
     &__slide {
