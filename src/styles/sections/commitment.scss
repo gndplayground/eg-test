@@ -1,0 +1,76 @@
+@use "../abstract/mixins";
+
+.commitment {
+  padding-top: 64px;
+
+  &__text {
+    margin-top: 4px;
+  }
+
+  &__illustrator {
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  &__illustrator-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__illustrator-line {
+    position: absolute;
+    z-index: -1;
+    right: calc(50% - 20px);
+    bottom: -85px;
+    height: 100px;
+    width: auto;
+  }
+
+  &__illustrator-bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@include mixins.breakpoint(desktop) {
+  .commitment {
+    padding-top: 90px;
+    padding-bottom: 140px;
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__illustrator {
+      padding-top: 40px;
+      margin-bottom: 0;
+    }
+
+    &__illustrator-line {
+      bottom: -130px;
+      height: 140px;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+
+    &__text {
+      width: 390px;
+    }
+
+    &__title {
+      width: 530px;
+    }
+  }
+}

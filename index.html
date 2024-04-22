@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bee You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="site-header" by-data="siteHeader">
+      <div class="container">
+        <div class="site-header__wrapper">
+          <h1>
+            <a class="site-header__logo-link" href="/">
+              <span class="sr-only">Bee You</span>
+              <img
+                src="/images/Logo-BeeYou.svg"
+                alt="Bee You Logo"
+                loading="eager"
+              />
+            </a>
+          </h1>
+          <nav class="site-header__nav">
+            <ul class="site-header__nav-list">
+              <li class="site-header__nav-item site-header__nav-item--active">
+                <a href="#">Trang chủ</a>
+              </li>
+              <li class="site-header__nav-item">
+                <a href="#">Tote collection</a>
+              </li>
+              <li class="site-header__nav-item">
+                <a href="#">Về chúng tôi</a>
+              </li>
+              <li class="site-header__nav-item">
+                <a href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="site-header__end-side">
+            <a href="#" aria-label="Giỏ hàng" class="site-header__cart">
+              <div class="site-header__cart-bubble">
+                <span class="sr-only">2 sản phẩm trong giỏ hàng</span>
+                <span aria-hidden="true"> 2 </span>
+              </div>
+              <img
+                src="/icons/bag.svg"
+                alt="Icon Giỏ Hàng"
+                width="22"
+                height="22"
+              />
+            </a>
+            <button class="site-header__menu-toggle" aria-label="Menu">
+              <img src="/icons/menu.svg" alt="Icon Menu" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="slideshow">
+        <div class="container">
+          <div
+            by-data="slideshow"
+            class="splide"
+            role="group"
+            aria-label="Site main slider"
+            data-per-view="1"
+            data-pagination="true"
+            data-autoplay="5000"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide slideshow__slide">
+                  <img
+                    src="/images/slide-1.jpg"
+                    alt="Slider 1"
+                    fetchpriority="high"
+                    class="slideshow__image"
+                    width="1230"
+                    height="480"
+                  />
+                </li>
+                <li class="splide__slide slideshow__slide">
+                  <img
+                    src="/images/slide-1.jpg"
+                    class="slideshow__image"
+                    alt="Slider 2"
+                    loading="lazy"
+                    width="1230"
+                    height="480"
+                  />
+                </li>
+                <li class="splide__slide slideshow__slide">
+                  <img
+                    class="slideshow__image"
+                    src="/images/slide-1.jpg"
+                    class="slideshow__image"
+                    alt="Slider 3"
+                    width="1230"
+                    height="480"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="commitment">
+        <div class="commitment__wrapper">
+          <div class="commitment__illustrator">
+            <img
+              class="commitment__illustrator-main"
+              loading="lazy"
+              src="/images/commit-girl.png"
+              alt=""
+              width="445"
+              height="605"
+            />
+            <img
+              class="commitment__illustrator-bg"
+              loading="lazy"
+              src="/images/commit-city.svg"
+              alt=""
+            />
+            <div class="commitment__illustrator-line">
+              <svg
+                width="723"
+                height="145"
+                viewBox="0 0 723 145"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M-49 144C1.28261 113.793 149.647 55.7058 340.845 65.0174C579.843 76.657 713.309 40.0756 722 1"
+                  stroke="url(#paint0_linear_1_831)"
+                  stroke-width="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_831"
+                    x1="1061.24"
+                    y1="281.118"
+                    x2="1006.35"
+                    y2="-113.951"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFAF00" />
+                    <stop offset="1" stop-color="#FFDC00" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="container commitment__content">
+            <h2 class="title commitment__title">
+              Tote của BeeYou cam kết mang đến sự hài lòng tối đa cho bạn
+            </h2>
+            <p class="commitment__text">
+              Với cộng đồng nhà thiết kế, chúng tôi là ngôi nhà thời trang,nơi
+              chắp cánh cho hàng vạn mẫu thiết kế của các Designer trên khắp
+              Vietnam.
+              <br />
+              <br />
+              Với khách hàng, BeeYou là nơi bạn dễ dàng tìm thấy những những sản
+              phẩm thời trang thể hiện CHẤT của riêng mình. Là chính mình cùng
+              BeeYou.
+              <br />
+              <br />
+              Với đội ngũ lâu năm kinh nghiệm, có tâm với nghề, những dòng sản
+              phẩm của BeeYou được tuyển chọn những nguyên vật liệu cao cấp
+              nhất, gia công tinh xảo, công nghệ tối tân nhất hiện nay, được
+              kiểm tra chất lượng đầu ra khắt khe.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="new-tote">
+        <div class="container">
+          <div class="new-tote__wrapper">
+            <div class="new-tote__fig">
+              <div class="new-tote__illustrator">
+                <svg
+                  width="517"
+                  height="517"
+                  viewBox="0 0 517 517"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.04"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M33.6028 314.862C32.4354 310.81 31.3692 306.714 30.4071 302.579L328.915 6.96265C333.04 7.96513 337.125 9.07141 341.166 10.2786L33.6028 314.862ZM39.3564 332.336C37.945 328.537 36.6245 324.694 35.3977 320.809L347.094 12.1317C350.966 13.3964 354.796 14.7545 358.582 16.2032L39.3564 332.336ZM46.1538 348.777C44.5227 345.205 42.9744 341.588 41.5114 337.927L364.151 18.4128C367.797 19.9115 371.399 21.4951 374.955 23.1611L46.1538 348.777ZM53.9031 364.276C52.0702 360.912 50.3133 357.501 48.6349 354.045L380.198 25.6935C383.637 27.4055 387.031 29.1956 390.377 31.0613L53.9031 364.276ZM62.5372 378.897C60.5154 375.728 58.5641 372.509 56.6854 369.244L395.318 33.8919C398.565 35.8022 401.764 37.7847 404.913 39.8373L62.5372 378.897ZM72.0089 392.69C69.8074 389.706 67.6715 386.67 65.6034 383.585L409.571 42.949C412.636 45.0468 415.651 47.2121 418.614 49.4426L72.0089 392.69ZM82.2852 405.685C79.9099 402.88 77.5962 400.02 75.3461 397.109L423 52.8225C425.889 55.1005 428.726 57.4419 431.509 59.8443L82.2852 405.685ZM93.3468 417.903C90.8011 415.273 88.3134 412.586 85.8858 409.844L435.633 63.485C438.35 65.9389 441.013 68.4525 443.619 71.0237L93.3468 417.903ZM105.186 429.351C102.471 426.895 99.8104 424.379 97.207 421.805L447.483 74.9214C450.032 77.5495 452.522 80.2341 454.952 82.9733L105.186 429.351ZM117.807 440.025C114.92 437.744 112.086 435.401 109.306 432.996L458.556 87.1277C460.934 89.9308 463.251 92.7877 465.503 95.6964L117.807 440.025ZM131.224 449.911C128.162 447.81 125.15 445.642 122.189 443.409L468.845 100.112C471.049 103.093 473.187 106.126 475.258 109.209L131.224 449.911ZM145.465 458.98C142.22 457.067 139.024 455.081 135.877 453.026L478.328 113.892C480.353 117.059 482.307 120.274 484.188 123.537L145.465 458.98ZM160.571 467.191C157.135 465.476 153.744 463.683 150.401 461.815L486.975 128.501C488.811 131.862 490.571 135.27 492.252 138.723L160.571 467.191ZM176.605 474.486C172.962 472.984 169.362 471.398 165.81 469.729L494.738 143.986C496.372 147.555 497.924 151.17 499.39 154.828L176.605 474.486ZM193.645 480.783C189.776 479.515 185.95 478.153 182.168 476.701L501.55 160.412C502.965 164.208 504.289 168.048 505.519 171.93L193.645 480.783ZM211.807 485.969C207.686 484.963 203.605 483.853 199.568 482.642L507.32 177.87C508.491 181.919 509.561 186.011 510.528 190.142L211.807 485.969ZM231.246 489.892C226.835 489.186 222.464 488.363 218.135 487.427L511.923 196.485C512.817 200.822 513.597 205.202 514.259 209.619L231.246 489.892ZM252.183 492.33C247.432 491.981 242.718 491.497 238.045 490.882L515.184 216.428C515.753 221.106 516.191 225.824 516.494 230.579L252.183 492.33ZM274.945 492.961C273.467 492.987 271.985 493 270.5 493C266.83 493 263.178 492.92 259.547 492.761L516.854 237.947C516.951 240.786 517 243.637 517 246.5C517 248.788 516.969 251.069 516.907 253.343L274.945 492.961ZM300.078 491.244C294.448 491.917 288.76 492.4 283.02 492.688L516.556 261.414C516.214 267.149 515.676 272.832 514.948 278.455L300.078 491.244ZM328.675 486.095C322.259 487.648 315.746 488.949 309.145 489.988L513.604 287.509C512.501 294.099 511.136 300.6 509.52 307.002L328.675 486.095ZM363.374 474.905C355.554 478.088 347.534 480.881 339.338 483.26L506.58 317.638C504.121 325.81 501.249 333.804 497.988 341.594L363.374 474.905ZM417.847 444.132C405.277 453.519 391.782 461.735 377.523 468.618L491.562 355.683C484.54 369.874 476.192 383.291 466.679 395.773L417.847 444.132ZM322.58 5.51197L29.0185 296.23C28.129 291.888 27.3537 287.504 26.6958 283.082L309.456 3.06083C313.871 3.76176 318.246 4.5799 322.58 5.51197ZM288.494 0.646749C293.251 0.98993 297.97 1.4681 302.649 2.07743L25.7788 276.265C25.2151 271.582 24.7828 266.858 24.4855 262.098L288.494 0.646749ZM265.702 0.0457596C267.298 0.0152992 268.897 0 270.5 0C274.058 0 277.599 0.0753993 281.121 0.224687L24.1345 254.722C24.0451 251.992 24 249.251 24 246.5C24 244.093 24.0345 241.695 24.103 239.305L265.702 0.0457596ZM240.528 1.80376C246.167 1.12023 251.865 0.6271 257.614 0.330997L24.4658 231.221C24.8171 225.476 25.3653 219.784 26.1036 214.151L240.528 1.80376ZM211.865 7.01624C218.296 5.44724 224.825 4.13048 231.442 3.07706L27.4652 205.078C28.583 198.472 29.9635 191.956 31.5958 185.54L211.865 7.01624ZM177.035 18.3367C184.885 15.1175 192.938 12.2917 201.17 9.8838L34.5684 174.871C37.0569 166.664 39.962 158.637 43.2591 150.817L177.035 18.3367ZM121.707 49.9556C134.487 40.2654 148.242 31.7931 162.798 24.7116L49.7744 136.64C56.9977 122.155 65.6048 108.482 75.4226 95.792L121.707 49.9556Z"
+                    fill="black"
+                  />
+                  <circle
+                    cx="246.5"
+                    cy="270.5"
+                    r="246.5"
+                    fill="url(#paint0_linear_5_1711)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_5_1711"
+                      x1="246.5"
+                      y1="24"
+                      x2="246.5"
+                      y2="517"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FFC800" />
+                      <stop offset="1" stop-color="#FFC800" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <img
+                  class="new-tote__illustrator-main"
+                  loading="lazy"
+                  src="/images/new-tote-girl.png"
+                  alt=""
+                  width="493"
+                  height="568"
+                />
+              </div>
+            </div>
+            <div class="new-tote__content">
+              <h2 class="title new-tote__title">Siêu phẩm Tote mới ra lò</h2>
+              <p class="new-tote__text">
+                Mới "chế" ra cái Tote mới các bác ạ. Thông tin mô tả sơ bộ các
+                bác đọc ở dưới nhé. em đi đóng hàng giao cho khách phát
+              </p>
+              <div class="card new-tote__card">
+                <div class="new-tote__card-deco"></div>
+                <p class="new-tote__info-title">Thông tin mô tả sơ bộ</p>
+                <ul class="new-tote__info-list">
+                  <li class="new-tote__info">
+                    <img
+                      src="/icons/textile.svg"
+                      width="24"
+                      height="24"
+                      alt=""
+                    />
+                    <span>Chất vải canvas mềm mịn, không xù, không nhão</span>
+                  </li>
+                  <li class="new-tote__info">
+                    <img src="/icons/color.svg" width="24" height="24" alt="" />
+                    <span
+                      >Bee có 5 màu cho bạn lựa canh: Xanh dương, Hồng baby,
+                      Vàng chanh,...</span
+                    >
+                  </li>
+                  <li class="new-tote__info">
+                    <img src="/icons/fit.svg" width="24" height="24" alt="" />
+                    <span>Size túi: 38*34*7cm</span>
+                  </li>
+                  <li class="new-tote__info">
+                    <img
+                      src="/icons/zipper.svg"
+                      width="24"
+                      height="24"
+                      alt=""
+                    />
+                    <span
+                      >Túi có khoá kéo, túi con tiện lợi cho nàng sử dụng</span
+                    >
+                  </li>
+                </ul>
+                <div class="new-tote__action">
+                  <button class="btn">Tìm thiểu thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collection-feature">
+        <div class="container">
+          <h2 class="title collection-feature__title">Tote giá nóng</h2>
+          <p class="colection-feature__subtitle">
+            Đống này đang giảm giá nên rất "nóng”. Bạn còn chờ gì nữa mà "phỏng
+            tay” ngay đi
+          </p>
+        </div>
+        <div class="container collection-feature__product-container">
+          <div class="collection-feature__product-list">
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-1.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-2.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-3.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-4.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collection-feature">
+        <div class="container">
+          <h2 class="title collection-feature__title">Tote bán chạy</h2>
+          <p class="colection-feature__subtitle">
+            Ra bao nhiêu hàng cũng bán không kịp với mấy cô mà, mà cứ như vậy là
+            Bee thích à nha, hehe
+          </p>
+        </div>
+        <div class="container collection-feature__product-container">
+          <div class="collection-feature__product-list">
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-1.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-2.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-3.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-4.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collection-feature">
+        <div class="container">
+          <h2 class="title collection-feature__title">Tote nổi bật</h2>
+          <p class="colection-feature__subtitle">
+            Ra bao nhiêu hàng cũng bán không kịp với mấy cô mà, mà cứ như vậy là
+            Bee thích à nha, hehe
+          </p>
+        </div>
+        <div class="container collection-feature__product-container">
+          <div class="collection-feature__product-list">
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-1.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-2.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-3.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collection-feature__product">
+              <div class="card card-product">
+                <div class="card-product__border"></div>
+                <img
+                  class="card-product__deco"
+                  src="/images/intersect.svg"
+                  alt=""
+                  loading="lazy"
+                />
+                <a href="#" class="card-product__img">
+                  <img
+                    src="/images/product-4.jpg"
+                    alt="Product 1"
+                    loading="lazy"
+                    width="237"
+                    height="237"
+                  />
+                </a>
+                <div class="card-product__content">
+                  <h3 class="card-product__title">
+                    <a href="#">Túi Totes Cactus Bag nữ tính xành điệu</a>
+                  </h3>
+                  <p class="card-product__price">320.000 đ</p>
+                  <div class="card-product__variant-list">
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #ef9cd6"
+                    >
+                      <span class="sr-only">Màu hồng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #85cef2"
+                    >
+                      <span class="sr-only">Màu xanh</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #f4ea88"
+                    >
+                      <span class="sr-only">Màu vàng</span>
+                    </button>
+                    <button
+                      class="card-product__variant-item"
+                      style="--variant-color: #fff"
+                    >
+                      <span class="sr-only">Màu trắng</span>
+                    </button>
+                  </div>
+                  <div class="card-product__action">
+                    <button class="btn btn--full">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container review">
+        <img
+          class="review__fig"
+          src="/images/review-fig.jpg"
+          loading="lazy"
+          alt=""
+          width="599"
+          height="702"
+        />
+        <div class="review__container">
+          <div class="review__content">
+            <h2 class="title review__title">Đánh giá của các nàng</h2>
+            <p class="review__subtitle">
+              Mấy đánh giá này là lấy từ facebook qua nè, không có tự bịa ra đâu
+              nha. Hông tin lên facebook mà xem.
+            </p>
+            <div class="review__slides">
+              <div
+                by-data="reviewSlideshow"
+                class="splide"
+                role="group"
+                aria-label="Review slider"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-1.jpg"
+                        alt="Slider 1"
+                        fetchpriority="high"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-2.jpg"
+                        alt="Slider 2"
+                        loading="lazy"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-3.jpg"
+                        alt="Slider 3"
+                        loading="lazy"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-1.jpg"
+                        alt="Slider 1"
+                        fetchpriority="high"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-2.jpg"
+                        alt="Slider 2"
+                        loading="lazy"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                    <li class="splide__slide review__slide">
+                      <img
+                        src="/images/review-3.jpg"
+                        alt="Slider 3"
+                        loading="lazy"
+                        width="462"
+                        height="147"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="splide__arrows review__arrows">
+                  <button
+                    class="review__arrow review__arrow--prev splide__arrow splide__arrow--prev"
+                  >
+                    <img
+                      src="/icons/down-arrow.svg"
+                      alt=""
+                      loading="lazy"
+                      width="22"
+                      height="22"
+                    />
+                  </button>
+                  <button
+                    class="review__arrow review__arrow--next splide__arrow splide__arrow--next"
+                  >
+                    <img
+                      src="/icons/down-arrow.svg"
+                      alt=""
+                      loading="lazy"
+                      width="22"
+                      height="22"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="insta">
+        <div class="container">
+          <h2 class="title insta__title">BeeYou trên Instagram</h2>
+          <div class="insta__subtitle">
+            Follow BeeYou trên instagram để có cơ hội tham gia các chương trình
+            ưu đãi dành riêng cho người dùng Instagram
+          </div>
+          <div class="insta__link-outer">
+            <a href="#" class="insta__link">
+              <img
+                width="16px"
+                height="16px"
+                src="/icons/logo-instagram.svg"
+                alt="Instagram"
+                loading="lazy"
+              />
+              instagr.am/beeyoufashion
+            </a>
+          </div>
+        </div>
+        <div
+          by-data="instaSlideshow"
+          class="splide insta__list"
+          role="group"
+          aria-label="Insta main slider"
+          data-per-view="1"
+          data-pagination="true"
+          data-autoplay="5000"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-1.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-2.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-3.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-4.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-3.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-2.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+              <li class="splide__slide insta__item">
+                <img
+                  src="/images/product-1.jpg"
+                  alt="Slider 1"
+                  loading="lazy"
+                  width="237"
+                  height="237"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="container site-footer__container">
+          <ul class="site-footer__nav">
+            <li>
+              <a href="#">Sản phẩm hot</a>
+            </li>
+            <li>
+              <a href="#">Sản phẩm bán chạy</a>
+            </li>
+            <li>
+              <a href="#">Hot deal tháng 12</a>
+            </li>
+            <li>
+              <a href="#">Anotner links</a>
+            </li>
+          </ul>
+          <div class="site-footer__ender">
+            <p class="site-footer__copy">© 2020 beebag.com.vn</p>
+            <ul class="site-footer__socials">
+              <li class="site-footer__social">
+                <a href="#">
+                  <img src="/icons/logo-fb.svg" alt="Facebook" loading="lazy" />
+                </a>
+              </li>
+              <li class="site-footer__social">
+                <a href="#">
+                  <img
+                    src="/icons/logo-instagram-b.svg"
+                    alt="Instagram"
+                    loading="lazy"
+                  />
+                </a>
+              </li>
+              <li class="site-footer__social">
+                <a href="#">
+                  <img src="/icons/logo-yt.svg" alt="Youtube" loading="lazy" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/scripts/main.tsx"></script>
+  </body>
+</html>

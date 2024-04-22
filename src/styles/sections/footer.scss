@@ -1,0 +1,82 @@
+@use "../abstract/mixins";
+
+.site-footer {
+  background-color: var(--color-footer-background);
+  padding-top: 32px;
+  padding-bottom: 38px;
+
+  &__nav {
+    columns: 2;
+    font-size: 14px;
+
+    & > li {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__ender {
+    display: flex;
+    align-items: center;
+  }
+
+  &__copy {
+    flex: 1;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__socials {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__social {
+    display: inline-flex;
+
+    & > a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & > img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@include mixins.breakpoint(desktop) {
+  .site-footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__container {
+      display: flex;
+    }
+
+    &__nav {
+      display: flex;
+      gap: 40px;
+      columns: auto;
+
+      & > li {
+        margin-bottom: 0;
+      }
+    }
+
+    &__ender {
+      margin-left: auto;
+      gap: 12px;
+    }
+
+    &__copy {
+      flex: auto;
+    }
+
+    &__socials {
+      flex: auto;
+    }
+  }
+}

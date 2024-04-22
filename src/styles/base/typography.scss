@@ -1,0 +1,14 @@
+@use "../abstract/mixins";
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@include mixins.breakpoint(desktop) {
+  .title {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../abstract/mixins";
+
+.collection-feature {
+  padding-top: 64px;
+
+  &__subtitle {
+    margin-top: 4px;
+    max-width: 600px;
+  }
+
+  &__product-container {
+    overflow: auto hidden;
+    padding-bottom: 20px;
+  }
+
+  &__product-list {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    min-width: 660px;
+  }
+}
+
+@include mixins.breakpoint(desktop) {
+  .collection-feature {
+    padding-top: 40px;
+
+    &__product-list {
+      gap: 32px;
+    }
+
+    &__product {
+      min-height: 520px;
+      padding-bottom: 20px;
+    }
+  }
+}

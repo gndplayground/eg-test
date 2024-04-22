@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #ffc800;
+  --color-text-on-primary: #000;
+  --color-secondary: #009efe;
+  --color-text-on-secondary: #fff;
+  --color-text: #000;
+  --color-body-background: #f4f4f4;
+  --color-header-background: #f4f4f4;
+  --color-header-sticky-background: #ffff;
+  --color-card-background: #fff;
+  --color-footer-background: #fff;
+  --container-width-mobile: 100%;
+  --container-gutter-mobile: 1.5rem;
+  --container-width-tablet: 100%;
+  --container-gutter-tablet: 2rem;
+  --container-width: 1280px;
+  --container-gutter: 1rem;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--color-body-background);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}

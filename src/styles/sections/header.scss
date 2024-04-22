@@ -1,0 +1,132 @@
+@use "../abstract/mixins";
+
+.site-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: inline-flex;
+
+    & > img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__cart-bubble {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-secondary);
+    color: var(--color-text-on-secondary);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-body-background);
+  }
+
+  &__end-side {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+  }
+
+  &__menu-toggle {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+
+    & > img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav-item {
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 4px;
+      left: 50%;
+      width: 0;
+      transform: translateX(-50%);
+      height: 8px;
+      border-radius: 12px;
+      background-color: var(--color-primary);
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        width: calc(100% + 6px);
+      }
+    }
+
+    &--active {
+      &::after {
+        width: calc(100% + 6px);
+      }
+    }
+  }
+}
+
+.header-sticky {
+  position: sticky;
+  top: calc((var(--header-height)) * -1);
+  z-index: 1000;
+  box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+  transition: top 0.4s ease-in-out;
+  background-color: var(--color-header-sticky-background);
+
+  &--show {
+    top: 0;
+  }
+}
+
+@include mixins.breakpoint(desktop) {
+  .site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__nav {
+      display: block;
+      margin-left: 60px;
+    }
+  }
+}

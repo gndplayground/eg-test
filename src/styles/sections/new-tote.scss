@@ -1,0 +1,127 @@
+@use "../abstract/mixins";
+
+.new-tote {
+  padding-top: 120px;
+
+  &__fig {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__illustrator {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    margin-top: 32px;
+  }
+
+  &__text {
+    margin-top: 4px;
+  }
+
+  &__card {
+    position: relative;
+    padding: 24px 16px 16px;
+    margin-top: 32px;
+  }
+
+  &__card-deco {
+    position: absolute;
+    background-color: #fcd4d4;
+    opacity: 0.7;
+    transform: rotate(-45deg);
+    height: 18px;
+    width: 90px;
+    left: -30px;
+    top: 9px;
+  }
+
+  &__info-title {
+    font-weight: 500;
+  }
+
+  &__info-list {
+    margin-top: 24px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 24px;
+
+    & > svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__action {
+    margin-top: 16px;
+
+    & > button {
+      width: 100%;
+    }
+  }
+}
+
+@include mixins.breakpoint(desktop) {
+  .new-tote {
+    padding-top: 16px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    &__fig {
+      width: 510px;
+      flex-shrink: 0;
+    }
+
+    &__illustrator {
+      width: 100%;
+    }
+
+    &__content {
+      padding-right: 80px;
+    }
+
+    &__card {
+      margin-top: 55px;
+      padding: 32px;
+    }
+
+    &__card-deco {
+      height: 24px;
+      width: 120px;
+      left: -40px;
+      top: 12px;
+    }
+
+    &__info {
+      margin-top: 16px;
+    }
+
+    &__action {
+      margin-top: 24px;
+
+      & > button {
+        width: auto;
+        min-width: 170px;
+      }
+    }
+  }
+}
